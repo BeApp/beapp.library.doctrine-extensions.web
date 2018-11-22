@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": ">=7.1",
+        "ext-json": "*",
         "doctrine/orm": "^2.6"
     },
     "autoload": {

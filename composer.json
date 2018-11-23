@@ -3,7 +3,7 @@
     "description": "Common extensions classes for Doctrine",
     "type": "library",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "keywords": [
         "doctrine",
         "extensions"
@@ -16,6 +16,7 @@
     ],
     "require": {
         "php": ">=7.1",
+        "ext-json": "*",
         "doctrine/orm": "^2.6"
     },
     "autoload": {

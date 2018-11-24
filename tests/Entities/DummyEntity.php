@@ -17,4 +17,14 @@ class DummyEntity
      */
     public $id;
 
+    /**
+     * @ORM\Column(type="float")
+     */
+    public $latitude;
+
+    /**
+     * @ORM\Column(type="float")
+     */
+    public $longitude;
+
 }

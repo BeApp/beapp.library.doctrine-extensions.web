@@ -18,6 +18,16 @@ class DummyEntity
     public $id;
 
     /**
+     * @ORM\Column(type="string")
+     */
+    public $name;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    public $description;
+
+    /**
      * @ORM\Column(type="float")
      */
     public $latitude;

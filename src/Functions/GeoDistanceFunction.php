@@ -15,6 +15,7 @@ use Doctrine\ORM\Query\SqlWalker;
  */
 class GeoDistanceFunction extends FunctionNode
 {
+    public const GEO_DISTANCE = 'GEO_DISTANCE';
     private const EARTH_RADIUS = 6371;
 
     /** @var ArithmeticExpression */

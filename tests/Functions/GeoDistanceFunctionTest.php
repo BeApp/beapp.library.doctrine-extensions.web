@@ -10,7 +10,7 @@ class GeoDistanceFunctionTest extends DbTestCase
 
     protected function configureDb(Configuration $configuration)
     {
-        $configuration->addCustomNumericFunction('GEO_DISTANCE', GeoDistanceFunction::class);
+        $configuration->addCustomNumericFunction(GeoDistanceFunction::GEO_DISTANCE, GeoDistanceFunction::class);
     }
 
     public function testSqlBuild_onlyArithmetic()

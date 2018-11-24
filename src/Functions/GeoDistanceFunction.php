@@ -11,7 +11,7 @@ use Doctrine\ORM\Query\SqlWalker;
 /**
  * "GEO_DISTANCE(latOrigin, lngOrigin, latDestination, lngDestination)"
  *
- * Compute Geodesic distance between two points, in km
+ * Compute Geodesic distance between two points, in meters
  */
 class GeoDistanceFunction extends FunctionNode
 {
@@ -77,6 +77,6 @@ class GeoDistanceFunction extends FunctionNode
 
     private function radian(string $value): string
     {
-        return sprintf('RADIAN(%s)', $value);
+        return sprintf('RADIANS(%s)', $value);
     }
 }
